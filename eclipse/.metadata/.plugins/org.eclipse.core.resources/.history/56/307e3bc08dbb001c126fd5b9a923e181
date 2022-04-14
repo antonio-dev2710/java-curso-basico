@@ -1,0 +1,22 @@
+package com.loaine.cursojava.lista01;
+
+//import java.util.Scanner;
+
+public class Questão13 {
+
+	public static void main(String[] args) {
+		
+
+		//Scanner scan=new Scanner(System.in);
+		//System.out.print("Qual é seu o sexo?");
+		String genero="mulher";
+		//System.out.print("Qual é a sua altura?");
+		//double altura=scan.nextDouble();
+		if(genero=="mulher") {
+			//(72.7*h) - 58
+			System.out.print("ok");
+			
+		}
+	}
+
+}

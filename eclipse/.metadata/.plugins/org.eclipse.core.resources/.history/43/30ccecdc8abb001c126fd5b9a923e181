@@ -1,0 +1,15 @@
+package com.loaine.cursojava.lista01;
+
+import java.util.Scanner;
+
+public class Questão13 {
+
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Qual é seu gênero?");
+		String homem;
+		
+	}
+
+}
