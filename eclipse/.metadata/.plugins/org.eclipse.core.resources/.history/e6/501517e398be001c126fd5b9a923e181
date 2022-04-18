@@ -1,0 +1,32 @@
+package com.loaine.cursojava.lista01;
+
+import java.util.Scanner;
+
+public class Questao16 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.print("O tamanho em metros quadrados da área a ser pintada? ");
+		double area=scan.nextDouble();
+		int lataLitros=18;
+		int metrosTinta=3;
+		int precoLata=80;
+		int areaPintadaComUmaLata=lataLitros*metrosTinta;
+		
+		double litrosGastos=area/3;
+		
+		
+		if(area>=areaPintadaComUmaLata) {
+			double quantidadeLata=(double)(litrosGastos/lataLitros);
+			double precoTotal=quantidadeLata*precoLata;
+			System.out.print(precoTotal+"R$");
+			
+		}else {
+			System.out.print(precoLata+"R$");
+		}
+
+	}
+
+}

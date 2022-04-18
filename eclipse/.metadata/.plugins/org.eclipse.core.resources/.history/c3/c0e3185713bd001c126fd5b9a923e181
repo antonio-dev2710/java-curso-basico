@@ -1,0 +1,30 @@
+package com.loaine.cursojava.lista01;
+
+import java.util.Scanner;
+
+public class Questao15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scan=new Scanner(System.in);
+		
+		System.out.print("Quanto você ganha por hora? ");
+		double valorPorHora=scan.nextDouble();
+		
+		System.out.print("Quantas horas trabalhadas no mês? ");
+		double horaDeTrabalhoMes=scan.nextDouble();
+		
+		double salarioBruto=valorPorHora*horaDeTrabalhoMes;
+		System.out.print("Sálario Bruto: "+salarioBruto+"R$");
+		
+		int impostoDeRenda=(100-11)/100;
+		int inss=(100-8)/100;
+		int sindicato=(100-5)/100;
+		
+		double pagouImpostoDeRenda=salarioBruto*impostoDeRenda;
+		System.out.println("Sálario IR: "+pagouImpostoDeRenda+"R$");
+		
+		
+	}
+
+}

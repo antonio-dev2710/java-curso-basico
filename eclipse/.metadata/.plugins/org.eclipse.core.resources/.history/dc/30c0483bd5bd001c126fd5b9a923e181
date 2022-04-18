@@ -1,0 +1,15 @@
+package com.loaine.cursojava.lista01;
+
+public class QuestEx {
+
+	public static void main(String[] args) {
+		int n,i;
+		
+		i=20;
+		n=2*(i%3);
+		System.out.print(n);
+		
+
+	}
+
+}

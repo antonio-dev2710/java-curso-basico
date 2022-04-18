@@ -1,0 +1,58 @@
+package com.loaine.cursojava.lista01;
+
+import java.util.Scanner;
+
+public class Questao17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.print("O tamanho em metros quadrados da área a ser pintada? ");
+		double area=scan.nextDouble();
+		System.out.print("Vc quer o galão de 18 litros, de 3,6 galões ou mistos? ");
+		double lataLitros=scan.nextDouble();
+		double metrosTinta=6;
+		int precoLata=80;
+		double areaPintadaComUmaLata=(double) (lataLitros*metrosTinta);
+		//cobertura da tinta é de 1 litro para cada 6 metros quadrados
+		double litrosGastos=area/metrosTinta;
+		
+		if(lataLitros==18) {
+			
+			System.out.print("Vc vai precisar compar  "+litrosGastos+"L");
+		if(area>=areaPintadaComUmaLata) {
+			double quantidadeLata=(double)(litrosGastos/lataLitros);
+			double precoTotal=quantidadeLata*precoLata;
+			System.out.println(precoTotal+"R$");		
+		}	
+		else {
+			System.out.print(precoLata+"R$");
+		 }
+		return;
+	   }
+		
+		
+		if(lataLitros==3.6) {
+			System.out.print("Vc vai precisar compar  "+litrosGastos+"L");
+			 metrosTinta=6;
+			 precoLata=25;
+			 areaPintadaComUmaLata=lataLitros*metrosTinta;
+			//cobertura da tinta é de 1 litro para cada 6 metros quadrados
+			litrosGastos=area/metrosTinta;
+			
+			if(area>=areaPintadaComUmaLata) {
+				double quantidadeLata=(double)(litrosGastos/lataLitros);
+				double precoTotal=quantidadeLata*precoLata;
+				System.out.println(precoTotal+"R$");		
+			}	
+			else {
+				System.out.print(precoLata+"R$");
+			 }
+			return;
+		}
+		
+		
+	}
+	
+}
