@@ -7,14 +7,20 @@ public class Questao08 {
 	public static void main(String[] args) {
 		Scanner scan=new Scanner(System.in);
 		
-		System.out.print("Quanto você ganha por hora? ");
-		double valorPorHora=scan.nextDouble();
+		System.out.print("Digite  preço de três produtos: ");
+		double numero01=scan.nextDouble(),numero02=scan.nextDouble(),numero03=scan.nextDouble();
 		
-		System.out.print("Quantas horas trabalhadas no mês? ");
-		double horaDeTrabalhoMes=scan.nextDouble();
+		if(numero01<numero02&&numero01<numero03) {
+			System.out.print("Menor preço 1: "+numero01);
+		}
 		
-		double totalSalario=valorPorHora*horaDeTrabalhoMes;
-		System.out.print("Sálario no mês: "+totalSalario+"R$");
+		else if(numero02<numero01&&numero02<numero03) {
+			System.out.print("Menor preço 2: "+numero02);
+		}
+		else {
+			System.out.print("Menor preçoo 3: "+numero03);
+		}
+		
 		
 		
 		

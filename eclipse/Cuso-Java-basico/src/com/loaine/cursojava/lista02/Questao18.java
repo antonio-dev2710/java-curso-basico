@@ -8,17 +8,41 @@ public class Questao18 {
 		// TODO Auto-generated method stub
 		
 		Scanner scan=new Scanner(System.in);
-		System.out.print("Peça o tamanho de um arquivo para download (em MB)? ");
-		double arquivoMb=scan.nextDouble();
-		System.out.print(" A velocidade de um link de Internet (em Mbps)? ");
-		double velocidadeMbs=scan.nextDouble();
-		//picosegundo para minuto divida o valor de tempo por 6e+13
-
-		double potencia=Math.pow(10, 13);
-		//v=s/t
-		double tempoMinutos=(double)((arquivoMb/velocidadeMbs)/( 6*potencia));
+		System.out.print("Escolha uma data dd/mm/aaaa ");
+		int dia= scan.nextInt();
+		int mes=scan.nextInt();
+		int ano=scan.nextInt();
 		
-		System.out.print("O tempo aproximado de download do arquivo usando este link (em minutos): "+tempoMinutos);
+		if(dia>31||mes>12 || ano<1000 || mes<0 ||dia<0 || ano<0) {
+			System.out.print("tente outra data");
+			return;
+			
+		};
+		int centenaDia=dia/100%10;
+		int dezenaDia=dia/10%10;
+		int unidadeDia=dia/1%10;
+		
+		 int centenaMes=mes/100%10;
+		 int dezenaMes=mes/10%10;
+		 int  unidadeMes=mes/1%10;
+		 
+		 int milAno=ano/1000%10;
+		 int centenaAno=ano/100%10;
+		 int dezenaAno=ano/10%10;
+		 int unidadeAno=ano/1%10;
+		 
+		
+	if(centenaDia!=0 ) {
+		System.out.print("tem outra data");
+		return;
+	}
+	else if(centenaMes!=0) {
+		System.out.print("tem outra data");
+		return;
+	}
+		
+	System.out.print("Escolha uma data dd/mm/aaaa :"+ dia+'/'+mes+"/"+ano);
+		
 	}
 
 

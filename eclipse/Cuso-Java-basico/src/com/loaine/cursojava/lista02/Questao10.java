@@ -9,16 +9,24 @@ public class Questao10 {
 		
 			Scanner scan=new Scanner(System.in);
 			
-			//C = 5 * ((F-32) / 9).
-			
-			System.out.print("Escolha uma temperatura: ");
-			
-			double  temperaturaCelsius=scan.nextDouble();
-			double  temperaturaFahrenheit;
-			temperaturaFahrenheit=32+(1.8*temperaturaCelsius);
 			
 			
-			System.out.print("temperatura Celcius: "+temperaturaFahrenheit+"°F");
+			System.out.print("Escolha um turno: ");
+			
+			String turno=scan.next();
+			
+			switch(turno) {
+			case"N":System.out.println("Boa noite");
+			break;
+			case"M":System.out.println("Bom dia");
+			break;
+			case"V":System.out.println("Boa tarde");
+			break;
+			default:System.out.println("Valor Inválido!");
+
+			}
+			
+		
 
 	}
 

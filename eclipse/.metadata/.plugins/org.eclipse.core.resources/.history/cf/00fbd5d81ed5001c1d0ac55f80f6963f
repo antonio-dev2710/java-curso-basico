@@ -1,0 +1,40 @@
+package com.loaine.cursojava.lista02;
+
+import java.util.Scanner;
+
+public class Questao18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Escolha uma data dd/mm/aaaa ");
+		int dia= scan.nextInt();
+		int mes=scan.nextInt();
+		int ano=scan.nextInt();
+		
+		int centenaDia=dia/1000%10;
+		int dezenaDia=dia/10%10;
+		int unidadeDia=dia/1%10;
+		
+		 int centenaMes=mes/1000%10;
+		 int dezenaMes=mes/10%10;
+		 int  unidadeMes=mes/1%10;
+		 
+		 int centenaAno=ano/1000%10;
+		 int dezenaAno=ano/10%10;
+		 int unidadeAno=ano/1%10;
+		
+	if(centenaDia>=0 && centenaDia<=0) {
+		System.out.print("Ok");
+	}
+	
+		
+		
+		
+	}
+
+
+	
+	
+}

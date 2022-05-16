@@ -1,0 +1,36 @@
+package com.loaine.cursojava.lista02;
+
+import java.util.Scanner;
+
+public class Questao17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.print("Digite um ano:");
+		
+		int ano = scan.nextInt();
+		
+		ano=ano%1;
+		
+		if(ano==00) {
+			System.out.print("ok");
+		}
+		ano=ano*10;
+		ano=ano/100;
+		
+			double bissexto = ano%4;
+		
+		
+		
+		if(bissexto==0) {
+			System.out.print("É bissexto");
+		}
+		else {
+			System.out.print("Não é bissexto");
+		}
+	}
+
+}

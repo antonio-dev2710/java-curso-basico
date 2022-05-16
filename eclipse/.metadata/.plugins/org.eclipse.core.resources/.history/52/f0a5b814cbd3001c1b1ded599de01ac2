@@ -1,0 +1,49 @@
+package com.loaine.cursojava.lista02;
+
+import java.util.Scanner;
+
+public class Questao17 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.print("Digite um ano:");
+		
+		int ano = scan.nextInt();
+		int dezena;
+		 int unidade;
+		 dezena=ano/10%10;
+		 unidade=ano/1%10;
+		 if(dezena==0 && unidade==0 && ano<=999) {
+				ano=ano/100;
+				 ano  = ano%4;
+				}
+			
+		
+		
+		if(ano<=9999 && dezena==0 && unidade==0 ) {
+			ano=ano/100;
+			 ano  = ano%4;
+			 }
+		
+		
+		//para os numeros diferentes de zero na dezena e na unida
+		//transformar em string concatenar e transformar em numero
+		
+		
+		dezena=dezena*10+(unidade);
+		
+		dezena = ano%4;
+		
+		
+		if(ano==0) {
+			System.out.print("É bissexto");
+		}
+		else {
+			System.out.print("Não é bissexto");
+		}
+	}
+
+}

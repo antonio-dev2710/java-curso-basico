@@ -8,89 +8,55 @@ public class Questao17 {
 		// TODO Auto-generated method stub
 		
 		Scanner scan=new Scanner(System.in);
-		System.out.print("O tamanho em metros quadrados da área a ser pintada? ");
-		double area=scan.nextDouble();
 		
-		System.out.print("Vc quer o galão de 18 litros ou de 3,6 galões ? ");
-		double lataLitros=scan.nextDouble();
+		System.out.print("Digite um ano:");
 		
-		System.out.print("Vc quer o galões  de 18 litros e de 3,6 ? ");
-		boolean lataMista=scan.nextBoolean();
-		
-		double metrosTinta=6;
-		int precoLata=80;
-		double areaPintadaComUmaLata=(double) (lataLitros*metrosTinta);
-		//cobertura da tinta é de 1 litro para cada 6 metros quadrados
-		double litrosGastos=area/metrosTinta;
-		
-		if(lataLitros==18) {
+		int ano = scan.nextInt();
+		int dezena;
+		 int unidade;
+		 dezena=ano/10%10;
+		 unidade=ano/1%10;
+		 if(dezena==0 && unidade==0 && ano<=999) {
+				ano=ano/100;
+				 ano  = ano%4;
+				 if(dezena==0) {
+						System.out.print("É bissexto");
+					}
+					else {
+						System.out.print("Não é bissexto");
+					}
+				}
 			
-			System.out.println("Vc vai precisar compar  "+litrosGastos+"L");
-		if(area>=areaPintadaComUmaLata) {
-			double quantidadeLata=(double)(litrosGastos/lataLitros);
-			System.out.println("Quantidade de latas: "+quantidadeLata);
-			double precoTotal=quantidadeLata*precoLata;
-			System.out.println(precoTotal+"R$");		
-		}	
+		
+		
+		if(ano<=9999 && dezena==0 && unidade==0 ) {
+			ano=ano/100;
+			 ano  = ano%4;
+			 if(dezena==0) {
+					System.out.print("É bissexto");
+				}
+				else {
+					System.out.print("Não é bissexto");
+				}
+			 }
+		
+		
+		//para os numeros diferentes de zero na dezena e na unida
+		//transformar em string concatenar e transformar em numero
+		
+		if(dezena!=0 && unidade!=0) {
+		dezena=dezena*10+(unidade);
+		
+		dezena = dezena%4;
+		
+		
+		if(dezena==0) {
+			System.out.print("É bissexto");
+		}
 		else {
-			System.out.print(precoLata+"R$");
-		 }
-		return;
-	   }
-		
-		
-		if(lataLitros==3.6) {
-			System.out.println("Vc vai precisar compar  "+litrosGastos+"L");
-			 metrosTinta=6;
-			 precoLata=25;
-			 areaPintadaComUmaLata=lataLitros*metrosTinta;
-			//cobertura da tinta é de 1 litro para cada 6 metros quadrados
-			litrosGastos=area/metrosTinta;
-			
-			if(area>=areaPintadaComUmaLata) {
-				double quantidadeLata=(double)(litrosGastos/lataLitros);
-				System.out.println("Quantidade de latas :"+quantidadeLata);
-				double precoTotal=quantidadeLata*precoLata;
-				System.out.println(precoTotal+"R$");		
-			}	
-			else {
-				System.out.print(precoLata+"R$");
-			 }
-			return;
+			System.out.print("Não é bissexto");
 		}
-		
-		
-		if(lataMista==true) {
-			System.out.println("Vc vai precisar compar  "+litrosGastos+"L");
-			 metrosTinta=6;
-			 precoLata=105;
-			 lataLitros=21.6;
-			 areaPintadaComUmaLata=lataLitros*metrosTinta;
-			//cobertura da tinta é de 1 litro para cada 6 metros quadrados
-			litrosGastos=area/metrosTinta;
-			
-			if(area>=areaPintadaComUmaLata) {
-				
-				// folga de 10% isso quer dizer um desconto em cima da quantidade de latas
-				//1º passo: V x % = Vd
-
-				//2º passo: V – Vd = Vf
-				double quantidadeLata=(double)(litrosGastos/lataLitros);
-				double quantidadeLataDesconto=quantidadeLata-(quantidadeLata*0.1);
-				System.out.println("Quantidade de latas :"+quantidadeLataDesconto);
-				double precoTotal=quantidadeLataDesconto*precoLata;
-				System.out.println(precoTotal+"R$");		
-			}	
-			else {
-				System.out.print(precoLata+"R$");
-			 }
-			return;
 		}
-		
-		
 	}
 
-
-	
-	
 }

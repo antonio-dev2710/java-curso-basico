@@ -22,34 +22,28 @@ Scanner scan=new Scanner(System.in);
 
 //2º passo: V – Vd = Vf
 		
-		System.out.print("Quanto você ganha por hora? ");
-		double valorPorHora=scan.nextDouble();
+		System.out.print("Digite os 3 lados de um  triângulo ? ");
+		double ladoT1=scan.nextDouble();
+		double ladoT2=scan.nextDouble();
+		double ladoT3=scan.nextDouble();
 		
-		System.out.print("Quantas horas trabalhadas no mês? ");
-		double horaDeTrabalhoMes=scan.nextDouble();
+		double SomaDoisLados1 = ladoT1+ ladoT2;
+		double SomaDoisLados2= ladoT1+ ladoT3;
+		double SomaDoisLados3= ladoT2+ ladoT3;
 		
-		double salarioBruto=valorPorHora*horaDeTrabalhoMes;
-		System.out.println("Sálario Bruto: "+salarioBruto+"R$");
-		
-		double impostoDeRenda=0.11;
-		double inss=0.08;
-		double sindicato=0.05;
-		
-		double pagouImpostoDeRenda=salarioBruto*impostoDeRenda;
-		System.out.println("IR: "+ pagouImpostoDeRenda+"R$");
-		
-		double pagouInss=salarioBruto*inss;
-		System.out.println("Inss: "+ pagouInss+"R$");
-		
-		double pagouSindicato=salarioBruto*sindicato;
-		System.out.println("Sindicato: "+ pagouSindicato+"R$");
-		
-		
-		double descontoTotal=pagouImpostoDeRenda+ pagouInss+pagouSindicato;
-		
-		double salarioLiquido=salarioBruto-descontoTotal;
-		
-		System.out.println("Salário Líquido: "+salarioLiquido+"R$");
+		if(SomaDoisLados1>ladoT3||SomaDoisLados2>ladoT2||SomaDoisLados3>ladoT2) {
+			
+			System.out.println("É triangulo ");
+			if(ladoT1==ladoT2 && ladoT2==ladoT3 && ladoT1==ladoT3) {
+				System.out.println("Equilátero ");
+			}
+			else if(ladoT1==ladoT2 || ladoT2==ladoT3 || ladoT1==ladoT3) {
+				System.out.println("Isósceles ");
+			}
+			else {
+				System.out.println("Escaleno ");
+			}
+		}
 		
 	}
 

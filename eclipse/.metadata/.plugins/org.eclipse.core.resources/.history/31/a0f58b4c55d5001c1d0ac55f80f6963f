@@ -1,0 +1,25 @@
+package com.loaine.cursojava.lista02;
+
+import java.util.Scanner;
+
+public class Questao20 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//verificar quantas notas tem em cima do valor
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Digite um número menor do que 1000? ");
+		
+		int nota=scan.nextInt();
+		int centena=nota/100%10;
+		int dezena=nota/50%10;
+		int unidade=nota/10%10;
+		int um=nota/1%10;
+		
+		System.out.print("O tempo aproximado de download do arquivo usando este link (em minutos): "+centena+", "+dezena+" e "+unidade);
+	}
+
+
+	
+	
+}

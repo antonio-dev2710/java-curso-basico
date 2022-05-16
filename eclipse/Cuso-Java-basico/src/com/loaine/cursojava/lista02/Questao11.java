@@ -7,21 +7,30 @@ public class Questao11 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan=new Scanner(System.in);
-		System.out.print("Escolha um valor inteiro: ");
-		int valor01=scan.nextInt();
-		System.out.print("Escolha mais um valor inteiro: ");
-		int valor02=scan.nextInt();
-		System.out.print("Escolha mais um valor real: ");
-		double valor03=scan.nextDouble();
+		System.out.print("Digite seu salário: ");
+		double salario=scan.nextDouble();
+		double salarioAtual;
+		double percentual;
+		if(salario>0 && salario<=280) {
+			percentual=20;
+			salarioAtual=salario*1.20;
+		}
+		else if(salario>280 && salario<=700) {
+			percentual=15;
+			salarioAtual=salario*1.15;
+		}
+		else if(salario>700 && salario<=1500) {
+			percentual=10;
+			salarioAtual=salario*1.10;
+		}
+		else {percentual=5;
+			salarioAtual=salario*1.05;
+		}
+		System.out.println("o salário antes do reajuste: "+salario+
+				"\r\n"+ "o percentual de aumento aplicado "+percentual+"%"+"\r\n"
+				+ "o valor do aumento: "+(salarioAtual-salario)+"\r\n"
+				+ "o novo salário, após o aumento. "+salarioAtual);
 		
-		int triplo=3;
-
-		int resultadoA=(2*valor01)*(valor02/2);
-		System.out.println("o produto do dobro do primeiro com metade do segundo: "+resultadoA);
-		double resultadoB=(3*valor01)+valor03;
-		System.out.println("a soma do triplo do primeiro com o terceiro: "+resultadoB);
-		double resultadoC=Math.pow(valor03, triplo);
-		System.out.println("o terceiro elevado ao cubo: "+resultadoC);
 		
 		
 

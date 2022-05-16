@@ -9,27 +9,18 @@ public class Questão13 {
 		
 
 		Scanner scan=new Scanner(System.in);
-		//responda true ou false
-		System.out.print("Vc é mulher?");
-		boolean genero=scan.nextBoolean();
+		System.out.print("Escolha uma numero:");
+		int numero=scan.nextInt();
+		switch(numero){
+		case 1:System.out.println("Segunda ");break;
+		case 2:System.out.println("Terça ");break;
+		case 3:System.out.println("Quarta ");break;
+		case 4:System.out.println("Quinta ");break;
+		case 5:System.out.println("Sexta ");break;
+		case 6:System.out.println("Sabado ");break;
+		case 7:System.out.println("Domingo ");break;
 		
-		System.out.print("Qual é a sua altura?");
-		double altura=scan.nextDouble();
-		double pesoIdeal;
-		if(genero==true) {
-			//(62.1*h) - 44.7
-			
-			pesoIdeal=(62.1*altura) - 44.7;
-			
-			System.out.print("Seu peso ideal é: "+pesoIdeal);
-			
-		}
-		else {
-			//(72.7*h) - 58
-			pesoIdeal=(72.7*altura) - 58;
-
-			System.out.print("Seu peso ideal é: "+pesoIdeal);
-			
+		default:System.out.println("valor inválido");
 		}
 		
 	}

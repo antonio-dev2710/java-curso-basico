@@ -8,25 +8,34 @@ public class Questao16 {
 		// TODO Auto-generated method stub
 		
 		Scanner scan=new Scanner(System.in);
-		System.out.print("O tamanho em metros quadrados da área a ser pintada? ");
-		double area=scan.nextDouble();
-		int lataLitros=18;
-		int metrosTinta=3;
-		int precoLata=80;
-		int areaPintadaComUmaLata=lataLitros*metrosTinta;
-		//cobertura da tinta é de 1 litro para cada 3 metros quadrados
-		double litrosGastos=area/3;
-		
-		
-		if(area>=areaPintadaComUmaLata) {
-			double quantidadeLata=(double)(litrosGastos/lataLitros);
-			double precoTotal=quantidadeLata*precoLata;
-			System.out.print(precoTotal+"R$");
-			
-		}else {
-			System.out.print(precoLata+"R$");
+		System.out.print("digite 3 números: ");
+		double a=scan.nextDouble();
+		if(a==0) {
+			return;
 		}
-
+		double b=scan.nextDouble();
+		double c=scan.nextDouble();
+		
+		double delta = (Math.pow(b,2))-(4*a*c);
+		if(delta<0) {
+			System.out.println("a equação não possui raizes reais.");
+			return;
+		}
+		else if(delta==0) {
+			System.out.println("delta calculado igual a zero a equação possui apenas uma raiz real");
+		}
+		else if(delta>0) {
+			System.out.println("delta  positivo, a equação possui duas raiz reais");
+		}
+		System.out.println(delta);
+		//formula de bascara
+		double raizDeDelta=Math.sqrt(delta);
+		
+		double bascarax1= ((-(b))+raizDeDelta)/(2*a);
+		
+		double bascarax2= ((-(b))-raizDeDelta)/(2*a);
+		System.out.println(bascarax1);
+		System.out.println(bascarax2);
 	}
 
 }

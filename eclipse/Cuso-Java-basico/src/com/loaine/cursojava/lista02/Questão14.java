@@ -7,23 +7,41 @@ public class Questão14 {
 	public static void main(String[] args) {
 		//então a cada 50 quilos ele paga 4 reais de multa
 		Scanner scan=new Scanner(System.in);
-		System.out.print("Coloque o quilo total de peixe:");
-		double pesoDePeixes=scan.nextDouble();
-		int limite=50;
-		int multa=4;
-		
-		
-		if(pesoDePeixes>=limite) {
+		System.out.print("Digite as duas notas parciais:");
+		double nota1=scan.nextDouble();
+		double nota2=scan.nextDouble();
+		double media=(nota1+nota2)/2;
+		String conceito;
+		String aprv="Aprovado";
+		String rep="Reprovado";
+		if(media>=9&&media<=10) {
+			conceito="A";
 			
-			double excesso=(pesoDePeixes/limite);
-			System.out.println("Vc teve um excesso de:"+excesso+"Kg");
+			System.out.println("Sua média é: "+media+" " +conceito+" "+aprv);}
 			
-			double taxaExtra=excesso*multa;
-			System.out.println("Logo vc tem um taxa extra a pagar de:"+taxaExtra+"R$");
-		}else {
+		else if(media>=7.5&&media<=9) {
+			conceito="B";
 			
-			System.out.println("Vc n aprsenta excesso "+pesoDePeixes+"Kg");
+			System.out.println("Sua média é: "+media+" " +conceito+" "+aprv);}
+			
+			
+		else if(media>=6&&media<=7.5) {
+			conceito="C";
+			
+			System.out.println("Sua média é: "+ media +" "+ conceito +" "+ aprv);}
+			
+		else if(media>=4.5&&media<=6) {
+			conceito="D";
+			
+			System.out.println("Sua média é: "+media+" " +conceito+" "+rep);}
+			
+			
+		else {
+				conceito="E";
+			
+			System.out.println("Sua média é: "+media+" " +conceito+" "+rep);	
 		}
+		
 	}
 
 }
