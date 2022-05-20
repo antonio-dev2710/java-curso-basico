@@ -1,0 +1,56 @@
+package com.loaine.cursojava.lista02;
+
+import java.util.Scanner;
+
+public class Questao23 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//verificar quantas notas tem em cima do valor
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.print("Telefonou para a vítima?");
+		boolean telefone=scan.nextBoolean();
+		int numero;
+		if(telefone==true) {
+			numero=1;
+		}
+		else {
+			numero=0;
+		}
+		System.out.print("Esteve no local do crime?");
+		boolean local=scan.nextBoolean();
+		
+		if(local==true) {
+			numero=numero+numero;
+		}
+		else {
+			numero=0;
+		}
+		System.out.print("Mora perto da vítima?");
+		boolean moaradia=scan.nextBoolean();
+		if(moaradia==true) {
+			numero=numero+numero;
+		}
+		else {
+			numero=0;
+		}
+		System.out.print("Devia para a vítima?");
+		boolean vitima=scan.nextBoolean();
+		if(vitima==true) {
+			numero=numero+numero;
+		}
+		else {
+			numero=0;
+		}
+		
+		
+		
+		
+		
+	}
+
+
+	
+	
+}

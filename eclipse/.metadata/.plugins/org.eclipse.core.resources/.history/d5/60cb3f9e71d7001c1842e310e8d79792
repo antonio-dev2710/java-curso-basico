@@ -1,0 +1,31 @@
+package com.loaine.cursojava.lista02;
+
+import java.util.Scanner;
+
+public class Questao21 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//verificar quantas notas tem em cima do valor
+		Scanner scan=new Scanner(System.in);
+
+		System.out.print("Digite um número menor do que 1000? ");
+		
+		int numero=scan.nextInt();
+		System.out.print("Digite um número: ");
+		
+		int divisao = numero%2;
+		
+		switch(divisao) {
+		case 0:System.out.print("Número par ");
+		break;
+		default: System.out.println("Número impar");
+		
+		
+		}
+	}
+
+
+	
+	
+}
