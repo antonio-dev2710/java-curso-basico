@@ -1,0 +1,31 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questao25 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Mostrar cardapio com as opcoes
+		//escolher os pedidos
+		//mostar a quantidade de pedidos
+		//Calcular o valor a ser pago
+		//total de td
+		
+		
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.println("Escloha os itens no cardápio: ");
+		System.out.print("Especificaçao"+"cachorro quente"+"\n"
+		+"bauro simples"+"\n"
+		+"bauro com ovo"+"\n"
+		+"hamburguer"+"\n"
+		+"hamburguer"+"\n"
+		+"x burguer"+"\n"
+		+"Refri");
+		
+		
+		
+	}
+	
+}

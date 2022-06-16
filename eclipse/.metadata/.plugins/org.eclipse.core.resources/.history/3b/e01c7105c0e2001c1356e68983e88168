@@ -1,0 +1,34 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questao15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner scan=new Scanner(System.in);
+
+		//digitar as notas 
+		//contar o numero de notas
+
+		//somar as notas
+		// a partir do numero de ntoas tirar a média
+
+		double notas=0;
+
+		int numeroDeNotas=0;
+		double media;
+		
+		int i=0;
+		do {
+				notas=scan.nextDouble();
+			
+				numeroDeNotas++;
+				i++;
+		}
+		while(i<numeroDeNotas);
+		
+		
+	}
+
+}

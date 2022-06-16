@@ -1,0 +1,37 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questao10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+			Scanner scan=new Scanner(System.in);
+			
+			
+			int numero;
+			int i=0;		
+			while( i<10) {
+				System.out.print("Digite um numero: ");
+				numero=scan.nextInt();
+				if(numero%2==0) {
+					int par=0;
+					par++;
+					System.out.print("É par: "+par);
+				}
+				
+				else {
+					int impar=0;
+					impar++;
+					System.out.print("É par: "+impar);
+				}
+				
+				++i;
+			}
+											
+		
+
+	}
+
+}

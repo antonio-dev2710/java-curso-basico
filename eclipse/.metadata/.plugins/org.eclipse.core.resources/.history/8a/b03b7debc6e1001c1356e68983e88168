@@ -1,0 +1,34 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questão14 {
+
+	public static void main(String[] args) {
+		//então a cada 50 quilos ele paga 4 reais de multa
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Digite um numero:");
+		int numero=scan.nextInt();
+		int denominador=2;
+	while(denominador<=11) {
+			 if(numero==1||numero==2||numero==3){
+				System.out.println("É primo");
+				return;
+			}
+			 
+			 int resto=numero%denominador;
+
+			 denominador++;
+			 
+			 if(resto==0) {
+				 System.out.println(" não é inteiro");
+					
+			 }
+		}
+		 System.out.println(" é inteiro");
+		
+	
+		
+	}
+
+}

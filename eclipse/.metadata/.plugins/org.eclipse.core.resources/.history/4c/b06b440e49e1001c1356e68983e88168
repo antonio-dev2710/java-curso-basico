@@ -1,0 +1,25 @@
+package com.loaine.cursojava.lista03;
+
+
+public class Questao12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int numero = 1;
+		
+		int max = 10;
+		
+		int total=0;
+		for(int i=0;i<max;i++) {
+			total++;
+			numero=numero+i;
+			total=total+numero;
+			System.out.println(total);
+			total--;
+			
+
+			
+		}
+	}
+
+}

@@ -1,0 +1,66 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questao21 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//verificar quantas notas tem em cima do valor
+		Scanner scan=new Scanner(System.in);
+		
+		
+		
+		
+		double preco= scan.nextDouble();
+		double totalCompras=0;
+		
+				boolean fimDasCompras=true;
+				int i=1;
+
+		System.out.println("Produto"+i+": "+"R$"+String.format(" %.2f",preco).replaceAll(",", "."));
+	
+		
+
+		for( int aux=1 ;fimDasCompras==true ;aux++) {
+			
+				for( i=2;preco!=0 ;i++) {
+			preco=scan.nextDouble();
+			
+			System.out.println("Produto "+i+": "+"R$"+String.format(" %.2f",preco).replaceAll(",", "."));
+			totalCompras= totalCompras+preco;
+		}
+		
+				System.out.println("Total "+": "+"R$"+String.format(" %.2f",totalCompras).replaceAll(",", "."));
+		
+				
+				System.out.println("Quanto vc deu para o caixa:");
+				double valorCliente=scan.nextDouble();
+				System.out.println("Dineiro: "+valorCliente);
+				
+				
+				double troco=totalCompras-valorCliente;
+				System.out.println("Trco: "+ troco);
+				System.out.println("fim");
+				
+				i=1;
+				
+				preco=scan.nextDouble();
+				
+				System.out.println(fimDasCompras=scan.nextBoolean());
+				if(preco==0||fimDasCompras==false) {
+					return;
+				}
+				else {
+					System.out.println("Produto"+i+": "+"R$"+String.format(" %.2f",preco).replaceAll(",", "."));
+				}
+				
+		
+	}
+		
+		
+
+
+	}
+	
+}

@@ -7,20 +7,7 @@ public class Questao15 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Scanner scan=new Scanner(System.in);
-//Valor sem desconto (V): R$ 125,00
 
-//Porcentagem de desconto (%): 15%
-
-//Valor descontado (Vd): ?
-
-//Valor final (Vf): ?
-
-//125 x 15/100 (ou 0,15) = 18,75
-
-//> 125 – 18,75 = 106,25
-//1º passo: V x % = Vd
-
-//2º passo: V – Vd = Vf
 		
 		System.out.print("Digite os 3 lados de um  triângulo ? ");
 		double ladoT1=scan.nextDouble();

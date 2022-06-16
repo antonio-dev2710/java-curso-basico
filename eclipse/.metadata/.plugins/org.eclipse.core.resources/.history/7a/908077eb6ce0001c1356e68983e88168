@@ -1,0 +1,39 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questao06 {
+
+	public static void main(String[] args) {
+		Scanner scan= new Scanner(System.in);
+		System.out.print("Digite 5 números: ");
+		double numero01=scan.nextDouble(),
+					numero02=scan.nextDouble(),
+						numero03=scan.nextDouble(),
+							numero04=scan.nextDouble(),
+								numero05=scan.nextDouble();
+				
+		
+		while(numero01>numero02&&numero01>numero03&&numero01>numero04&&numero01>numero05) {
+			System.out.print(numero01);
+		}
+		while(numero02>numero01&&numero02>numero03&&numero02>numero04&&numero02>numero05) {
+			System.out.print(numero02);
+		}
+		while(numero03>numero01&&numero03>numero02&&numero03>numero04&&numero03>numero05) {
+			System.out.print(numero03);
+		}
+		while(numero04>numero01&&numero04>numero02&&numero04>numero03&&numero04>numero05) {
+			System.out.print(numero04);
+		}
+		while(numero05>numero01&&numero05>numero02&&numero05>numero03&&numero05>numero04) {
+			System.out.print(numero05);
+			return;
+		}
+		
+		
+		
+
+	}
+
+}

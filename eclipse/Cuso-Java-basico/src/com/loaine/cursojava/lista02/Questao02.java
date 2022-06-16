@@ -8,7 +8,7 @@ public class Questao02 {
 
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		
+		//string é uma classe em java
 		Scanner scan=new Scanner(System.in);
 		System.out.print("Escolha um sexo M ou F:");
 		String sexo=scan.next();

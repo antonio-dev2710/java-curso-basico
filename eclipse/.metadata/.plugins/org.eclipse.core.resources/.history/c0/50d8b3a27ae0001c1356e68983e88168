@@ -1,0 +1,25 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questao10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+			Scanner scan=new Scanner(System.in);
+			
+			System.out.print("Digite 5 números: ");
+			int numero;
+			int i=0;		
+			while( i<10) {
+				
+				numero=scan.nextInt();
+				++i;
+			}
+											
+		
+
+	}
+
+}

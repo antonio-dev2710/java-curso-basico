@@ -1,0 +1,47 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questao22 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//passar um conjunto de numeros
+		//verificar o maio e menor valor
+		Scanner scan=new Scanner(System.in);
+		double temp1 = 0;
+		double recebeAux=0;
+		double qtdTemp = 5;
+		double aux=0;
+		double media=0;
+		double totalMenor=0;
+		
+	for( int i=0;i<=qtdTemp;i++){
+		temp1=scan.nextDouble();
+			aux=temp1;
+			
+			if(temp1>recebeAux) {
+				
+				System.out.println("maior :"+temp1);
+	           
+	        }
+			else{
+				
+				System.out.println("menor :"+recebeAux);
+	           
+	        }
+				recebeAux=aux;	
+				media=media+temp1;
+						
+		}
+			
+			
+		
+		
+	}
+
+	
+
+	
+	
+}

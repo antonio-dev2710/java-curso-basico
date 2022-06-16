@@ -10,11 +10,11 @@ public class Questao08 {
 		System.out.print("Digite  preço de três produtos: ");
 		double numero01=scan.nextDouble(),numero02=scan.nextDouble(),numero03=scan.nextDouble();
 		
-		if(numero01<numero02&&numero01<numero03) {
+		if(numero01<=numero02&&numero01<=numero03) {
 			System.out.print("Menor preço 1: "+numero01);
 		}
 		
-		else if(numero02<numero01&&numero02<numero03) {
+		else if(numero02<=numero01&&numero02<=numero03) {
 			System.out.print("Menor preço 2: "+numero02);
 		}
 		else {

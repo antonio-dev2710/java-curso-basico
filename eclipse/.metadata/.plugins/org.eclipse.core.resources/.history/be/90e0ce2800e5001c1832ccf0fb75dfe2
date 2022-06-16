@@ -1,0 +1,33 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+
+public class Questao21 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//verificar quantas notas tem em cima do valor
+		Scanner scan=new Scanner(System.in);
+		
+		
+		
+		
+		double preco= scan.nextDouble();
+		int i=1;
+		System.out.println("Produto"+i+": "+"R$"+String.format(" %.2f",preco).replaceAll(",", "."));
+	
+		
+		for( i=2;preco!=0 ;i++) {
+			preco=scan.nextDouble();
+			
+			System.out.println("Produto"+i+": "+"R$"+String.format(" %.2f",preco).replaceAll(",", "."));
+			
+		}
+		System.out.println("fim");
+		
+	}
+
+
+	
+	
+}

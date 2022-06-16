@@ -1,0 +1,22 @@
+package com.loaine.cursojava.lista03;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
+public class Questao27 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//verificar quantas notas tem em cima do valor
+		Scanner scan=new Scanner(System.in);
+		
+		
+       
+       System.out.println("Fim do pedido,  obrigado!!"+1+"/"+2);
+      
+       
+      
+	
+		
+ }
+}
