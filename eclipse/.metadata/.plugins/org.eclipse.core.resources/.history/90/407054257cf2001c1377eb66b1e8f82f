@@ -1,0 +1,26 @@
+package com.loaine.cursojava.aula20;
+
+public class MatrizesTresD {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//-----------------------------------linha-coluna-profundidade
+		int [][][] matirz3D= new int [3][3][3];
+		int soma=0;
+		int somaPar=0;
+		int somaImpar=0;
+for(int i = 0 ; i<matirz3D.length;i++) {
+			for(int j = 0 ; j<matirz3D[i].length;j++) {
+					for(int k = 0 ; j<matirz3D[i][j].length;k++) {
+					
+						matirz3D[i][j][k]= i+j+k;
+						
+
+					}
+				}
+			
+		}
+
+	}
+
+}

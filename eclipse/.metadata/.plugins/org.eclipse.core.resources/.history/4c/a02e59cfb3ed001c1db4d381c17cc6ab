@@ -1,0 +1,29 @@
+package com.loaine.cursojava.lista04;
+
+import java.util.Scanner;
+
+public class Questao11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan= new Scanner(System.in);
+		
+		int[] A = new int[5];
+		int [] aux=new int[A.length];
+		int par=0;
+		int impar=0;
+		int i;
+		System.out.print("Digite um  número :");
+		for(i=0; i<A.length;i++) {
+			A[i]=scan.nextInt();
+			
+			A[i]+=aux[i];
+			aux[i]=A[i];
+			System.out.println("Total= "+A[i]);
+					
+		}
+		
+	
+	}
+
+}

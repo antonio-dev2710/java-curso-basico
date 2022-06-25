@@ -1,0 +1,45 @@
+package com.loaine.cursojava.lista04;
+
+import java.util.Scanner;
+
+public class Questao20 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan= new Scanner(System.in);
+		
+		double cotacao=5.15;
+		double [] real=new double[5];
+		double [] dolar=new double[5];
+		System.out.println("Digite o valor :");
+		
+		for(int i=0; i<real.length;i++) {
+			dolar [i]=scan.nextDouble();
+					
+		}
+		
+		
+		System.out.println("Cotação do dolar para real :");
+		System.out.print("------------------------------");
+		System.out.println(" ");
+
+		for(int i=0; i<real.length;i++) {
+			System.out.print("DOLAR =" +dolar [i]+" ");
+			
+					
+		}
+		System.out.println(" ");
+		for(int i=0; i<real.length;i++) {
+			
+			real [i] =dolar [i]*cotacao;
+
+			System.out.print("REAL =" +real [i]+" ");
+					
+		}
+		
+		
+		
+		
+	}
+
+}

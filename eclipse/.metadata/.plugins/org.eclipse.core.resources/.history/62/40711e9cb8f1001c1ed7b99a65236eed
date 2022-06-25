@@ -1,0 +1,54 @@
+package com.loaine.cursojava.lista04;
+
+import java.util.Scanner;
+//duvida
+public class Questao37 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan= new Scanner(System.in);
+		int [] A=new int[5];
+		int [] B=new int[A.length];
+		int i = 0;
+		int posB=0;
+		int posA=0;
+		int fatorial=0;
+		
+		//2 3 5 7
+		System.out.println("digite os número A : ");
+		for(i=0; i<A.length;i++) {
+			
+			A [i]=scan.nextInt();
+			
+		}
+		
+		
+		System.out.print("Vetor A =");
+		for(i=0; i<A.length;i++) {
+			System.out.print(A[i]+" ");
+					
+		}
+		
+		System.out.println("  ");
+		
+		for(i=0; i<A.length;i++) {
+			
+			while(posA<=1) {
+				fatorial=posA*(A[i]-1);
+				posA--;
+				
+			}
+			B[posB]=fatorial;
+			posB++;
+		}
+		
+		System.out.println("  ");
+		System.out.print("Fatorial de A =");
+		for(i=0; i<A.length;i++) {
+			System.out.print(B[i]+" ");
+					
+		}
+		
+		
+}
+}

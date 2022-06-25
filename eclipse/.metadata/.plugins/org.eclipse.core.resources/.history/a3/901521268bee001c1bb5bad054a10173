@@ -1,0 +1,40 @@
+package com.loaine.cursojava.lista04;
+
+import java.util.Scanner;
+
+public class Questao18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan= new Scanner(System.in);
+		int aluno = 0;
+		
+		int[] nota1 = new int[10];
+		int[] nota2 = new int[nota1.length];
+		
+		int media=0;
+		
+		for(int i=0; i<nota1.length;i++) {
+			System.out.println("Digite a  Nota1 do aluno : " + aluno );
+			nota1[i]=scan.nextInt();
+			
+			System.out.println("Digite a  Nota2 do aluno : " + aluno );
+			nota2[i]=scan.nextInt();
+			
+			media=nota1[i]+nota2[i];
+			media=media/2;
+			
+			if(media<7) {
+				System.out.println("Aluno: "+ aluno+" Reprovado = "+ media);
+			}
+			else if(media>=7 && media<=10) {
+				System.out.println("Aluno: "+ aluno+" Aprovado = "+ media);
+					
+			}
+			aluno++;
+			System.out.println(" ");
+		}
+			
+	}
+
+}

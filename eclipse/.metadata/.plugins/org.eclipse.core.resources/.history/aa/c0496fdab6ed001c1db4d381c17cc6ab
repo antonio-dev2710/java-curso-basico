@@ -1,0 +1,32 @@
+package com.loaine.cursojava.lista04;
+
+import java.util.Scanner;
+
+public class Questao12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan= new Scanner(System.in);
+		
+		int[] A = new int[10];
+		int par=0;
+		int impar=0;
+		System.out.print("Digite um  número :");
+		for(int i=0; i<A.length;i++) {
+			A[i]=scan.nextInt();
+			
+			A[i]%=2;
+			
+			if(A[i]==0) {
+				 par++;
+			}
+			else {
+				 impar++;
+			}
+					
+		}
+		System.out.println("Par "+par);
+		System.out.println("Impar "+impar);
+	}
+
+}

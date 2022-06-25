@@ -1,0 +1,61 @@
+package com.loaine.cursojava.lista04;
+
+import java.util.Scanner;
+
+public class Questao29 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan= new Scanner(System.in);
+		int [] A=new int[10];
+		int [] B=new int[A.length];
+		int [] C=new int[20];
+		int i=0;
+		
+		
+		System.out.println("digite os número A : ");
+		for(i=0; i<A.length;i++) {
+			
+			A [i]=scan.nextInt();
+			
+		}
+		System.out.println("digite os número B : ");
+		for(i=0; i<A.length;i++) {
+			
+			B [i]=scan.nextInt();
+			
+		}
+		
+		
+		for(i=0; i<C.length;i++) {
+			
+			if(i<=9) {
+			C [i]=A[i];
+			
+			}
+		else {
+			C [i]=B[i];
+
+			}
+		
+		
+		}
+		
+		
+		System.out.print("Vetor A =");
+		for( i=0; i<A.length;i++) {
+			
+			System.out.print(A[i]+" ");			
+		}
+		
+		System.out.println(" ");
+		
+		System.out.print("Vetor B =");
+		for( i=0; i<A.length;i++) {
+			
+			System.out.print(B[i]+" ");
+						
+		}
+	
+}
+}
