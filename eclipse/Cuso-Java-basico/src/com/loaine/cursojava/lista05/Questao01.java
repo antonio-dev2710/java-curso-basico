@@ -16,15 +16,15 @@ public class Questao01 {
 		int j=0;
 		int posj=0;
 		int posi=0;
+		 Random gerador = new Random();
 		for( i =0;i<numeros.length;i++) {
 			
 			for( j =0;j<numeros[i].length;j++) {
 				
-				 Random gerador = new Random();
-				 
-				numeros[i][j]= gerador.nextInt(10);
 				
-				if(numeros[i][j]>=0&&numeros[i][j]<=9) {
+				 
+				numeros[i][j]= gerador.nextInt(100);
+				
 				
 			
 					if(numeros[i][j]>maior) {
@@ -35,7 +35,7 @@ public class Questao01 {
 				
 				}
 				
-			}
+			
 			
 			}
 		}

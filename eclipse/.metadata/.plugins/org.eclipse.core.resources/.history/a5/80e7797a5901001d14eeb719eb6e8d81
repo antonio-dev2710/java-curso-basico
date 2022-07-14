@@ -1,0 +1,55 @@
+package com.loaine.cursojava.aula32;
+
+//public qualquer classe de outro pacote pode ver 
+ public class Carro {
+	//classe carros, possui 5 atributos
+	//no momento que se dar vida a esse carro e é chamado de objeto
+	 //dentro de uma classe declara como private
+	 private String marca;
+	 private String modelo;
+	 private int numPassageiros;
+	 private double capCombustivel;
+	 private double consumoCombustivel;
+	
+	
+
+	//metodos
+	 //pegar o valor do tipo "marca"
+	 public String getMarca() {
+		 return this.marca;
+	 }
+	 
+	 //pegar o valor do tipo "marca"
+	 public void setMarca(String marca) {
+		 this.marca=marca;
+	 }
+	 
+	 public String getModelo() {
+		 return this.modelo;
+	 }
+	 
+	 public void setModelo(String modelo) {
+		 this.modelo=modelo;
+	 }
+	 
+	 
+	 public int getNumPassageiros() {
+		 return this.numPassageiros;
+	 }
+	 
+	 public void setModelo(int numPassageiro) {
+		 this.numPassageiros=numPassageiro;
+	 }
+	 
+	 
+	 public double getCapCombustivel() {
+		 return this.capCombustivel;
+	 }
+	 
+	 public void setCapCombustivel(double capCombustivel) {
+		 this.capCombustivel = capCombustivel;
+	 }
+
+	
+	}
+

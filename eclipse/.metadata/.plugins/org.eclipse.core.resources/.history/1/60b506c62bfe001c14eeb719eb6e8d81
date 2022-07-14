@@ -1,0 +1,23 @@
+package com.loaine.cursojava.lista07;
+
+import java.util.Scanner;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner (System.in);
+		ContaCorrente cliente01=new ContaCorrente();
+		
+		System.out.println("Digite o numero da sua conta");
+		cliente01.numero=scan.next();
+		boolean numeroConta=cliente01.verificarNumeroConta();
+		
+		
+		System.out.println("Vc é cliente especial");
+		cliente01.status=scan.nextBoolean();
+		
+		
+
+	}
+
+}

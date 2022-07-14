@@ -1,0 +1,85 @@
+package com.loaine.cursojava.lista07;
+
+import java.util.Scanner;
+
+public class ContaCorrente {
+	
+	String numero;
+		boolean status;
+	
+	boolean vfDeposito=true;
+	boolean vfSaque=true;
+	int totalDeposito,totalSaque;
+	double saque,deposito;
+	
+	Scanner scan=new Scanner(System.in);
+	boolean verificarNumeroConta(){
+		
+	
+		//verifiaccao do numero
+		while(numero.length()<8) {
+			System.out.println("Seu numero esta incorreto, digite novamente");
+			 numero=scan.next();
+			 return false;
+		}
+		return true;
+		
+	}
+	
+}
+		/*
+		while(opFinalizada!=0){
+			System.out.println("Seu saldo atual é de: "+ saldo);
+			
+			
+			
+			do {System.out.println("Deposite o seu valor aq");
+				
+					deposito=scan.nextDouble();
+					saldo+=deposito;
+					totalDeposito+=deposito;
+					if(deposito==0) {
+						vfDeposito=false;
+					}
+					else {
+						System.out.println("Deseja fzr mais algum deposito?");
+						vfDeposito=scan.nextBoolean();
+					}
+			
+			}while(vfDeposito);
+			
+			//saque
+			do {System.out.println("Saq o seu valor aq");
+			saque=scan.nextDouble();
+			saldo-=saque;
+			totalSaque+=saque;
+			if(saldo<=50) {
+				System.out.println("vc n pode pode sacar!!");
+				vfSaque=false;
+			}
+			if(vfSaque==true)
+			System.out.println("Deseja fzr mais algum saque?");
+			vfSaque=scan.nextBoolean();
+			
+	}while(vfSaque||saque==0);
+			
+			//extrato
+			System.out.println("-----------------------------------");
+			System.out.println("Número :"+numero);
+			System.out.println("Check especial :"+status);
+			System.out.println("Seu Saldo é "+saldo);
+			System.out.println("vc depositou "+totalDeposito);
+			System.out.println("vc sacou " + "-"+totalSaque);
+			
+
+			
+			System.out.println("Para finalizar a opreação digete 0");
+			
+			opFinalizada = scan.nextInt();
+		}
+		
+		return saldo;
+	
+	*/
+
+

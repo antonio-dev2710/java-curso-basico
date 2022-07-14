@@ -20,12 +20,12 @@ public class Questao3 {
 		int qtdPar=0;
 		int qtdImpar=0;
 		int colunaC=0;
-		
+		 Random gerador = new Random();
 		for( i =0;i<matriz.length;i++) {
 			
 			for( j =0;j<matriz[i].length;j++) {
 				
-				 Random gerador = new Random();
+				
 				 
 				matriz[i][j]= gerador.nextInt(200);
 				
@@ -74,7 +74,8 @@ public class Questao3 {
 						
 		}
 		System.out.println(" " );
-		System.out.println("Quantidade:"+qtdImpar );
+		System.out.print("Quantidade:"+qtdPar );
+		System.out.println(" " );
 		
 		System.out.print("Matriz Impar =");
 		System.out.println(" ");
@@ -87,7 +88,7 @@ public class Questao3 {
 					
 		}
 		System.out.println(" " );
-		System.out.print("Quantidade:"+qtdPar );
+		System.out.println("Quantidade:"+qtdImpar );
 	}
 	
 
