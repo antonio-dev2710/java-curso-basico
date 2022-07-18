@@ -1,0 +1,67 @@
+package com.loaine.cursojava.lista08;
+
+import java.util.Scanner;
+
+public class Lampada {
+
+	private String tipo;
+	private double voltagem, preco;
+	int funcionar;
+	//construtores
+	Scanner scan= new Scanner(System.in);
+	
+
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public double getVoltagem() {
+		return voltagem;
+	}
+	public void setVoltagem(double voltagem) {
+		this.voltagem = voltagem;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	
+	
+	//metodo
+	public int getFuncionar() {
+		return funcionar;
+	}
+	public void setFuncionar(int opcao) {
+		opcao= scan.nextInt();
+		if(opcao>=0 && opcao<=2) {
+			if(opcao==1) {
+				System.out.println("Desligado");
+			}
+			if(opcao==2){
+				System.out.println("Ligado");
+			}
+			
+			
+		}
+			else {
+				System.out.println("vc so pode escolher de 0 a 2 !!!");
+			}
+		this.funcionar = opcao;
+		
+	}
+	
+	
+}
+	/*while(opcao!=0) {
+	
+	opcao=scan.nextInt();
+	
+
+}
+return opcao;
+}
+*/

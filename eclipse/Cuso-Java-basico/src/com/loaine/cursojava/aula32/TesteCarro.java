@@ -8,12 +8,7 @@ public class TesteCarro {
 		//setar todos os atributos como private
 		// e colocar o get e set para eles
 		Carro van = new Carro();
-		//passando valor pra o metodo set
-		van.setMarca("Fiat");
 		
-		
-		//pegando o valor setado
-		System.out.println(van.getMarca());
 	}
 
 }

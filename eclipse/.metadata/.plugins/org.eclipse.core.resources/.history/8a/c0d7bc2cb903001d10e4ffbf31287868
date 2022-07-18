@@ -1,0 +1,21 @@
+package com.loaine.cursojava.lista08;
+
+public class questoes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 3;
+
+		int b = 5;
+
+		int c = a * b + 5;
+		System.out.println(c);
+
+		a = a + 8 / 2;
+		System.out.println(a);
+		b = 5 * b * 5;
+		System.out.println(b);
+
+	}
+
+}
