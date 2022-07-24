@@ -1,0 +1,19 @@
+package com.loaine.cursojava.lista10;
+
+public class SomaNumero {
+	
+	private static int qtdNumero=0;
+	public static int somar(int numero){
+	
+		if(qtdNumero==10) {
+			return  numero;
+		}
+		if(qtdNumero!=10) {
+			System.out.println(numero+=qtdNumero);
+		}
+		
+		qtdNumero++;
+		return somar(numero);
+	}
+	
+}

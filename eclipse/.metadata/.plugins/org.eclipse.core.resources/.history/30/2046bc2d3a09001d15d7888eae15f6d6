@@ -1,0 +1,36 @@
+package com.loaine.cursojava.aula36;
+
+public class Teste {
+
+	public static void main(String[] args) {
+	
+		Contato contato = new Contato();
+		
+		contato.setNome("Tyrion");
+		//contato.setEndereco("Slavador");
+		contato.setTelefone("71992916455");
+		
+		//criar objeto endereco
+		Endereco end = new Endereco();
+		end.setNomeRua("Rua Bcuíba");
+		end.setNumero("890");
+		end.setCep("41680-050");
+		end.setCidade("Salvador");
+		end.setComplemento("colina A");
+		end.setEstado("Bahia");
+		
+		//setar objeto enderco no contato
+		//contato.setEndereco(end);
+		
+		System.out.println(contato.getNome());
+		System.out.println(contato.getTelefone());
+		
+		
+		//tratamento de erro para getEndereco()
+		if(contato.getEndereco()!=null) {
+			System.out.println(contato.getEndereco().getCidade());
+		}
+
+	}
+
+}

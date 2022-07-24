@@ -1,0 +1,20 @@
+package com.loaine.cursojava.lista09;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		Contador.zerar(Contador.soma);
+		Contador.soma=1;
+		Contador.incrementar();
+		Contador.incrementar();
+		Contador.incrementar();
+		System.out.println(Contador.incrementar());
+		
+		
+		
+		
+		
+		
+	}
+
+}

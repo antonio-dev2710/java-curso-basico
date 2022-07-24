@@ -1,0 +1,20 @@
+package com.loaine.cursojava.aula36;
+
+public class Teste {
+
+	public static void main(String[] args) {
+	
+		Contato contato = new Contato();
+		
+		contato.setNome("Tyrion");
+		contato.setEndereco("Slavador");
+		contato.setTelefone("71992916455");
+		
+		System.out.println(contato.getNome());
+		
+		System.out.println(contato.getTelefone());
+		System.out.println(contato.getEndereco());
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.loaine.cursojava.lista09;
+
+public class Contador {
+	
+	static int soma;
+
+	//incrementar
+	
+	static int incrementar() {
+		
+			soma++;
+		
+		return soma;
+	}
+	
+	
+	
+	static int zerar(int num) {
+		
+		return soma=0;
+	}
+	
+}

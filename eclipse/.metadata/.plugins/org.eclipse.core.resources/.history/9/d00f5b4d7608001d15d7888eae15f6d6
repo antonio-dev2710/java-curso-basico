@@ -1,0 +1,15 @@
+package com.loaine.cursojava.lista10;
+
+public class SomaNumero {
+	
+	
+	public static int somar(int numero){
+	
+		if(numero==1) {
+			return 1;
+		}
+		
+		return numero+somar( numero-1);
+	}
+	
+}
